@@ -1,6 +1,6 @@
 // Cache sin conexión. Subir VERSION al publicar cambios.
-const VERSION = 'cn235-v5';
-const FILES = ['./', './index.html', './manifest.json', './icon3-180.png', './icon3-192.png', './icon3-512.png'];
+const VERSION = 'cn235-v6';
+const FILES = ['./', './index.html', './manifest.json', './icon4-180.png', './icon4-192.png', './icon4-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });
